@@ -7,6 +7,6 @@
 
 ## Requirements
 
-- font
+- font: `Poppins`
 - search
-- nav bar
+- country api with pagination
