@@ -2,9 +2,6 @@
   text-decoration: none;
 }
 
-box{
-  background-color: #fc636b;
-}
 /*----------------------- NAVBAR -----------------------*/
 
 .logo{
@@ -16,7 +13,7 @@ box{
   justify-content: space-around;
   align-items: center;
   height: 4rem;
-  background-color: hsla(44, 95%, 49%, 0.94);
+  background-color: hsla(44, 95%, 49%, 0.941);
   border-bottom: 2px solid white;
 }
 
@@ -33,6 +30,10 @@ box{
 }
 
 /*----------------------- HOME -----------------------*/
+
+.home_button{
+  text-decoration: none;
+}
 
 .home_container{
   height: 60rem;
@@ -81,17 +82,14 @@ font-weight: 700;
 .countriesList_container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 3rem 4rem;
   padding: 2rem 6rem;
   padding-top: 0;
   background-color: hsla(357, 63%, 57%, 0.95);
 }
 
-.countryForm{
-}
-
 .countries_container{
-  height: 35rem;
+  height: 25rem;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -103,7 +101,8 @@ font-weight: 700;
 }
 
 .countries_container h1{
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 10px 20px;
 }
 
 .countries_container h2{
@@ -112,7 +111,8 @@ font-weight: 700;
 
 .countries_container img{
   height: auto;
-  width: 22rem;
+  width: 10rem;
+  object-fit: contain;
 }
 
 .countries_container button{
@@ -132,8 +132,9 @@ border-radius: 10px;
 }
 /*----------------------- COUNTRY -----------------------*/
 .country_item{
-  height: 55rem;
-  width: auto;
+  min-height: 55rem;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,13 +159,30 @@ border-radius: 10px;
 }
 
 .country_image{
-  border: 1px solid black
+  border: 1px solid black;
+
 }
 
 span{
   font-size: 22px;
 }
 
+.border_list{
+  display: flex;
+  justify-content: center;
+}
+
+.border_list p{
+  padding-right: 10px;
+  font-size: 22px;
+}
+
 .border_items{
   list-style-type: none;
+  padding: 0 0;
+}
+
+.map_link{
+  text-decoration: none;
+  color: black
 }

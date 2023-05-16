@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import { Button, CircularProgress, Box } from "@mui/material";
 
 
 
@@ -31,12 +32,15 @@ export default function Country() {
     }
 
     
-console.log(country,"Pedro");
+
 
     if (isLoading) {
-        return <div>Loading...</div>;
-    }
-    return (
+        return  (
+            <Box sx={{ display: "flex", justifyContent:"center"}}>
+                <CircularProgress />
+            </Box>
+        )
+    } return (
         <div className="country_item">            
             <h1 className="country_name">{country.name.common}</h1>
             <h2 className="country_region">{country.region}</h2>
@@ -45,11 +49,21 @@ console.log(country,"Pedro");
             <p> <span>Population: </span> {country.population}</p>
             <p> <span>Area: </span>{country.area}</p>
             <div className="border_list">
+                <p>Borders: </p>
                 <ul className="border_items">
-                    <li>{checkBorders()}</li>
+                    {checkBorders()}
                 </ul>
             </div>
-            <a href={country.maps.googleMaps} target="_blank" rel="noreferrer"><button>Check on the map</button></a>
+            <Button 
+                sx={{ 
+                    backgroundColor: "#f4b406f0", 
+                    color: "black" }} 
+                    variant="contained" 
+                    href="#contained-buttons">
+                        <a className="map_link" href={country.maps.googleMaps} target="_blank" rel="noreferrer">
+                            Check on the map
+                        </a>
+            </Button>
         </div>
         );
     }
