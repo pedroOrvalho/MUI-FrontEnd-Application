@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+/*----------------------- NAVBAR -----------------------*/
+
+.logo{
+  width: 80px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar_container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  background-color: hsla(44, 95%, 49%, 0.94);
+  border-bottom: 2px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar_items{
+  list-style-type: none;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar_items li{
+  padding: 0px 3rem;
+}
+
+/*----------------------- HOME -----------------------*/
+
+.home_container{
+  height: 60rem;
+  background-image: url("./images/pngegg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsla(242, 45%, 56%, 0.944);
+}
+
+.home-content{
+  width: 35rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding: 10rem 10rem;
+}
+
+.home-content h1{
+  font-size: 4.8rem;
+  margin: 0 0;
+  color: hsl(357, 68%, 59%);
+}
+
+.home-content h2{
+  font-size: 2rem;
+  color: black;
+}
+
+.home-content p{
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.home-content button{
+background-color: hsla(44, 95%, 49%, 0.94);
+border-radius: 20px;
+padding: 1rem 2rem;
+font-size: 16px;
+font-weight: 700;
+}
+
+/*----------------------- COUNTRIESLIST -----------------------*/
+.countriesList_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 2rem 6rem;
+  background-color: hsla(357, 63%, 57%, 0.95);
+}
+
+
+
+.countries_container{
+  height: 35rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
   align-items: center;
+  background-color: hsla(357, 94%, 75%, 0.579);
+  border: 1px solid black;
+  padding-bottom: 2rem;
+}
+
+.countries_container h1{
+  font-size: 3rem;
+}
+
+.countries_container h2{
+  color: black;
+}
+
+.countries_container img{
+  height: auto;
+  width: 22rem;
+}
+
+.countries_container button{
+font-size: 16px;
+padding: 0.3rem 1rem;
+border-radius: 10px;
+}
+
+/*----------------------- COUNTRY -----------------------*/
+.country_item{
+  height: 55rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #fc636b;
 }
 
-.App-link {
-  color: #61dafb;
+.country_name{
+  margin-bottom: 0px;
+  font-size: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.country_region{
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+.country_subregion{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.country_image{
+  border: 1px solid black
+}
+
+span{
+  font-size: 22px;
+}
+
+.border_items{
+  list-style-type: none;
 }
