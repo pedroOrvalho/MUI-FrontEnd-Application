@@ -79,7 +79,9 @@ font-weight: 700;
 }
 
 /*----------------------- COUNTRIESLIST -----------------------*/
+
 .countriesList_container{
+  min-height: 55rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem 4rem;
