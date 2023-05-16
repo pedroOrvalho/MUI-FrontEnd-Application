@@ -2,6 +2,9 @@
   text-decoration: none;
 }
 
+box{
+  background-color: #fc636b;
+}
 /*----------------------- NAVBAR -----------------------*/
 
 .logo{
@@ -80,9 +83,12 @@ font-weight: 700;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   padding: 2rem 6rem;
+  padding-top: 0;
   background-color: hsla(357, 63%, 57%, 0.95);
 }
 
+.countryForm{
+}
 
 .countries_container{
   height: 35rem;
