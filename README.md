@@ -18,3 +18,10 @@ https://restcountries.com/v3.1/all
 
 ## Deploy link
 https://monumental-capybara-00d41f.netlify.app/
+
+Using: 
+pagination,
+font,
+search,
+button,
+loading,

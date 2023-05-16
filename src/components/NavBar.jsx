@@ -8,8 +8,8 @@ export default function NavBar() {
             <img className="logo" src={logo} alt="world logo" />
             <div className="navbar_list">
                 <ul className="navbar_items">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/Countries">Countries</Link></li>
+                    <li><Link className="link" to="/">Home</Link></li>
+                    <li><Link className="link" to="/Countries">Countries</Link></li>
                 </ul>
             </div>
         </div>
